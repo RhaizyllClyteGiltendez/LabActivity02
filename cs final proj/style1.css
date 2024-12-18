@@ -10,51 +10,30 @@ body {
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
-    text-align: center;
-    background-image: url('bg1.png');
-    background-size: cover;
-    background-attachment: fixed;
+    background: lightblue url("bg1.jpg") no-repeat fixed center;
+
+	<img id="home" src="watersplash.jpg" width="1" height="1">
+	<img id="next" src="watersplash.jpg" width="1" height="1">
 }
 
 
 header {
-    background: rgba(0, 119, 182, 0.9);
+    background: #0077b6;
     color: white;
-    padding: 20px 0;
-    position: relative;
+    padding: 20px;
+    text-align: center;
 }
 
 header .HydroHaven {
-    font-size: 3.5em;
-    margin: 0 auto;
-    margin-top: 20px;
+    font-size: 2.5em;
+    margin-bottom: 10px;
 }
 
-header .sub1 {
-    font-size: 1.2em;
-    margin: 10px auto;
+header nav {
+    margin: 10px 0;
 }
 
-header img#first {
-    position: fixed;
-    border-radius: 50%;
-    width: 100px;
-    top: 10px;
-    left: 20px;
-}
-
-header img#image {
-    width: 100px;
-    height: auto;
-    display: block;
-    margin: 20px auto;
-}
-
-nav {
-    margin-top: 10px;
-}
-
-nav a {
+header nav a {
     color: white;
     text-decoration: none;
     margin: 0 15px;
@@ -62,28 +41,61 @@ nav a {
     transition: color 0.3s;
 }
 
-nav a:hover {
+header nav a:hover {
     color: #ffd700;
 }
 
 
 main {
     padding: 40px 20px;
-    background: rgba(255, 255, 255, 0.8);
-    margin: 20px auto;
-    border-radius: 10px;
     max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transform: rotate(0.3deg);
 }
 
 main h2 {
     color: #0077b6;
-    font-size: 2.5em;
+    font-size: 2em;
     margin-bottom: 20px;
 }
 
 main p {
     font-size: 1.2em;
-    text-align: left;
+}
+
+
+article {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+article section h1 {
+    font-size: 1.8em;
+    color: #0077b6;
+}
+
+article section p {
+    font-size: 1.2em;
+}
+
+
+iframe.video {
+    display: block;
+    margin: 20px auto;
+    border: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+iframe.video:hover {
+    transform: scale(1.05);
 }
 
 
@@ -91,6 +103,7 @@ footer {
     background: #333;
     color: white;
     padding: 10px 0;
+    text-align: center;
     position: fixed;
     width: 100%;
     bottom: 0;
