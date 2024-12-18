@@ -4,12 +4,14 @@
     box-sizing: border-box;
 }
 
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
 }
+
 
 header {
     background: #0077b6;
@@ -22,6 +24,7 @@ header h1 {
     margin-bottom: 10px;
     font-size: 2.5em;
 }
+
 
 nav {
     margin: 10px 0;
@@ -36,8 +39,9 @@ nav a {
 }
 
 nav a:hover {
-    color: #ffd700;
+    color: #ff008f;
 }
+
 
 main {
     padding: 40px 20px;
@@ -59,6 +63,7 @@ main p {
     font-size: 1.2em;
 }
 
+
 footer {
     background: #333;
     color: white;
@@ -68,4 +73,35 @@ footer {
     width: 100%;
     bottom: 0;
     left: 0;
+}
+
+
+a[href="index.html"] {
+    color: pink; 
+}
+
+a[href^="about"] {
+    color: purple; 
+}
+
+a[href$=".html"] {
+    text-decoration: underline; 
+}
+
+
+header h1:first-child {
+    font-size: 2.5em; 
+}
+
+nav a:last-child {
+    font-weight: bold; 
+}
+
+main p:nth-of-type(2) {
+    margin-top: 20px; 
+}
+
+footer p {
+    text-align: center; 
+    margin-top: 50px; 
 }
