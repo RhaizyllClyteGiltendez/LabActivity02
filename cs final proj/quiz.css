@@ -1,6 +1,6 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #e3f2fd;
+    font-family: 'Trebuchet MS', Verdana, Arial, sans-serif;
+    background-color: #f3e5f5; 
     margin: 0;
     padding: 20px;
     display: flex;
@@ -16,14 +16,14 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     max-width: 600px;
     text-align: center;
-    border: 5px solid #007BFF;
+    border: 5px solid #673AB7; 
 }
 
 .query {
     font-size: 22px;
     margin-bottom: 20px;
     font-weight: bold;
-    color: #007BFF;
+    color: #673AB7; 
 }
 
 .choice {
@@ -36,13 +36,13 @@ body {
     cursor: pointer;
     transition: background 0.3s ease, transform 0.2s;
     font-size: 18px;
-    background-color: #28a745; 
-    color: white;
     font-weight: bold;
+    background-color: #009688; 
+    color: white;
 }
 
 .choice:hover {
-    background-color: #218838; 
+    background-color: #00796B; 
     transform: scale(1.05);
 }
 
@@ -55,23 +55,23 @@ body {
     cursor: pointer;
     transition: background 0.3s ease, transform 0.2s;
     font-size: 18px;
-    background-color: #007BFF;
-    color: white;
     font-weight: bold;
+    background-color: #673AB7; 
+    color: white;
 }
 
 .btn:hover {
-    background-color: #0056b3;
+    background-color: #5E35B1; 
     transform: scale(1.05);
 }
 
 .correct {
-    background-color: #28a745 !important;
+    background-color: #009688 !important; 
     color: white;
 }
 
 .incorrect {
-    background-color: #dc3545 !important;
+    background-color: #E91E63 !important; 
     color: white;
 }
 
@@ -88,12 +88,12 @@ header {
     left: 10px;
     font-size: 18px;
     font-weight: bold;
-    color: #007BFF;
+    color: #673AB7; 
 }
 
 #countdown {
     font-size: 18px;
     font-weight: bold;
-    color: #dc3545;
+    color: #D32F2F; 
     margin-bottom: 10px;
 }
