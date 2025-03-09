@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function initiateCountdown() {
         countdown = setInterval(() => {
             timeRemaining--;
-            document.getElementById('countdown').innerText = `Time Left: ${timeRemaining}s`;
+            document.getElementById('countdown').innerText = `Remaining Time: ${timeRemaining}s`;
             if (timeRemaining <= 0) {
                 clearInterval(countdown);
                 revealScore();
@@ -83,3 +83,4 @@ document.addEventListener("DOMContentLoaded", function () {
     initiateCountdown();
     loadQuestion();
 });
+
