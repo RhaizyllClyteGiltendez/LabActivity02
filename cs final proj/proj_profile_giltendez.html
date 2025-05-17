@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HydroHaven | Profile</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    window.addEventListener('DOMContentLoaded', ()=>{
+      const fields=['fname','lname','email','sex','why'];
+      fields.forEach(id=>{
+        document.getElementById(id).innerText = localStorage.getItem(id) || '—';
+      });
+    });
+  </script>
+</head>
+<body>
+  <header class="brand small">
+    <img src="logo.png" alt="HydroHaven logo" width="60" height="60">
+    <h1>Welcome to HydroHaven!</h1>
+  </header>
+
+  <main class="profile‑card">
+    <h2>User Profile</h2>
+    <p><strong>First name:</strong> <span id="fname"></span></p>
+    <p><strong>Last name:</strong> <span id="lname"></span></p>
+    <p><strong>Email:</strong> <span id="email"></span></p>
+    <p><strong>Sex:</strong> <span id="sex"></span></p>
+    <p><strong>Why I want support HydroHaven:</strong></p>
+    <blockquote id="why"></blockquote>
+
+    <a href="index.html" class="btn‑home">Back to Home</a>
+  </main>
+  <footer>Thank you for the support!</footer>
+</body>
+</html>
