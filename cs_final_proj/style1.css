@@ -1,0 +1,25 @@
+body {
+  background: lightblue url("bg1.jpg") no-repeat fixed center;
+}
+
+header .HydroHaven { font-size: 2.5em; margin-bottom: 10px; }
+
+#home, #next { display: none; }
+
+article {
+  padding: 20px;
+  max-width: 800px;
+  margin: 20px auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+article h1 { font-size: 1.8em; color: #0077b6; }
+
+iframe.video {
+  display: block;
+  margin: 20px auto;
+  border: none;
+  transition: transform .3s ease-in-out;
+}
+iframe.video:hover { transform: scale(1.05); }

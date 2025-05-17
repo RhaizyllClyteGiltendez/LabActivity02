@@ -1,0 +1,99 @@
+body {
+    font-family: 'Trebuchet MS', Verdana, Arial, sans-serif;
+    background-color: #f3e5f5; 
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.quiz-wrapper {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    text-align: center;
+    border: 5px solid #0084FF; 
+}
+
+.query {
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #0084FF; 
+}
+
+.choice {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #0077CC; 
+    color: white;
+}
+
+.choice:hover {
+    background-color: #005FA6; 
+    transform: scale(1.05);
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 10px 5px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #0077CC; 
+    color: white;
+}
+
+.btn:hover {
+    background-color: #005FA6; 
+    transform: scale(1.05);
+}
+
+.correct {
+    background-color: #009688 !important; 
+    color: white;
+}
+
+.incorrect {
+    background-color: #E91E63 !important; 
+    color: white;
+}
+
+#finalScore {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #333;
+}
+
+header {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #0084FF; 
+}
+
+#countdown {
+    font-size: 18px;
+    font-weight: bold;
+    color: #D32F2F;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HydroHaven | Water Quiz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="newstyle.css">
+  <script src="quiz.js" defer></script> 
+</head>
+<body>
+
+<header>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="solution.html">Solutions</a>
+      <a href="new.html">Quiz</a>
+      <a href="proj_signup_giltendez.html">Sign Up</a>
+      <a href="proj_profile_giltendez.html">Profile</a>
+    </nav>
+</header>
+
+<main class="quiz-wrapper">
+  <div id="countdown">Remaining Time: <span id="time">60</span>s</div>
+
+  <div id="quiz-content">
+    <div class="query" id="query"></div>
+    <div id="choices"></div>
+
+    <button class="btn" id="backBtn" disabled>Previous</button>
+    <button class="btn" id="forwardBtn" disabled>Next</button>
+    <button class="btn" id="finishBtn" style="display:none;">Submit</button>
+  </div>
+
+  <div id="finalScore" style="display:none;"></div>
+</main>
+
+<footer>&copy; 2025 HydroHaven</footer>
+
+</body>
+</html>
