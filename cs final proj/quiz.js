@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function initiateCountdown() {
         countdown = setInterval(() => {
             timeRemaining--;
-            document.getElementById('countdown').innerText = `Remaining Time: ${timeRemaining}s`;
+            document.getElementById('time').innerText = timeRemaining;
             if (timeRemaining <= 0) {
                 clearInterval(countdown);
                 revealScore();
@@ -47,7 +47,8 @@ document.addEventListener("DOMContentLoaded", function () {
         if (selectedIndex === correctIndex) {
             totalScore++;
         }
-        document.querySelectorAll('.btn').forEach((button, idx) => {
+
+        document.querySelectorAll('#choices .btn').forEach((button, idx) => {
             button.disabled = true;
             button.style.backgroundColor = idx === correctIndex ? "#28a745" : "#dc3545";
         });
@@ -76,11 +77,11 @@ document.addEventListener("DOMContentLoaded", function () {
     function revealScore() {
         clearInterval(countdown);
         document.getElementById('quiz-content').style.display = 'none';
-        document.getElementById('finalScore').innerText = `Your score is ${totalScore} out of ${quizSet.length}.`;
-        document.getElementById('finalScore').style.display = 'block';
+        const scoreBox = document.getElementById('finalScore');
+        scoreBox.innerText = `Your score is ${totalScore} out of ${quizSet.length}.`;
+        scoreBox.style.display = 'block';
     }
 
     initiateCountdown();
     loadQuestion();
 });
-
