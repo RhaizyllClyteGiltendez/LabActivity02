@@ -16,14 +16,14 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     max-width: 600px;
     text-align: center;
-    border: 5px solid #673AB7; 
+    border: 5px solid #0084FF; 
 }
 
 .query {
     font-size: 22px;
     margin-bottom: 20px;
     font-weight: bold;
-    color: #673AB7; 
+    color: #0084FF; 
 }
 
 .choice {
@@ -37,12 +37,12 @@ body {
     transition: background 0.3s ease, transform 0.2s;
     font-size: 18px;
     font-weight: bold;
-    background-color: #009688; 
+    background-color: #0077CC; 
     color: white;
 }
 
 .choice:hover {
-    background-color: #00796B; 
+    background-color: #005FA6; 
     transform: scale(1.05);
 }
 
@@ -56,12 +56,12 @@ body {
     transition: background 0.3s ease, transform 0.2s;
     font-size: 18px;
     font-weight: bold;
-    background-color: #673AB7; 
+    background-color: #0077CC; 
     color: white;
 }
 
 .btn:hover {
-    background-color: #5E35B1; 
+    background-color: #005FA6; 
     transform: scale(1.05);
 }
 
@@ -88,12 +88,12 @@ header {
     left: 10px;
     font-size: 18px;
     font-weight: bold;
-    color: #673AB7; 
+    color: #0084FF; 
 }
 
 #countdown {
     font-size: 18px;
     font-weight: bold;
-    color: #D32F2F; 
+    color: #D32F2F;
     margin-bottom: 10px;
 }
