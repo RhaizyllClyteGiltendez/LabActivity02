@@ -1,89 +1,147 @@
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+main img {
+  float: left;
+  margin-right: 20px;
+  width: 350px; height: 400px;
+  object-fit: cover;
+  transition: transform .5s, width .5s, height .5s;
 }
+main img:hover {
+  transform: scale(1.2);
+  width: 400px; height: auto;
+}
+
+a[href="index.html"] { color: pink; }
+a[href^="about"]     { color: purple; }
+a[href$=".html"]     { text-decoration: underline; }
+
+nav a:last-child { font-weight: bold; }
+main p:nth-of-type(2) { margin-top: 20px; }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+  font-family: 'Trebuchet MS', Verdana, Arial, sans-serif;
+  background: linear-gradient(135deg, #4a90e2, #50c8ff);
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-header {
-    background: #0077b6;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
+.sitebar {
+  background-color: #063970;
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
-header h1 {
-    margin-bottom: 10px;
-    font-size: 2.5em;
+.sitebar .brand {
+  font-weight: bold;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-nav {
-    margin: 10px 0;
+.sitebar nav a {
+  color: #a8d0ff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 600;
+  transition: color 0.3s ease;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 1.1em;
-    transition: color 0.3s;
-}
-
-nav a:hover {
-    color: #ff008f;
+.sitebar nav a:hover {
+  color: #e1f0ff;
 }
 
 main {
-    padding: 40px 20px;
-    max-width: 800px;
-    margin: 20px auto;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    position: relative;
+  max-width: 900px;
+  margin: 40px auto;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  padding: 30px 40px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
 }
 
-main h2 {
-    color: #0077b6;
-    font-size: 2em;
-    margin-bottom: 20px;
+h1, h2 {
+  color: #e0f7ff;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-main p {
-    font-size: 1.2em;
+.intro-section p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #d0e7ff;
+  max-width: 700px;
+  margin: 0 auto 20px;
+  text-align: center;
 }
 
-main img {
-    float: left;
-    margin-right: 20px;
-    width: 350px; 
-    height: 400px; 
-    transition: transform 0.5s ease-in-out, width 0.5s ease-in-out, height 0.5s ease-in-out;
-    object-fit: cover; 
+.responsive-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 30px auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.4);
 }
 
-main img:hover {
-    transform: scale(1.2); 
-    width: 400px; 
-    height: auto; 
-    position: relative; 
-    margin-right: 20px; 
+.quiz-invite {
+  margin-top: 30px;
+  text-align: center;
 }
 
+.quiz-invite p {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #b8d8ff;
+}
+
+.quiz-invite .button {
+  background-color: #2c6ed5;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 12px 30px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(44, 110, 213, 0.6);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  display: inline-block;
+}
+
+.quiz-invite .button:hover {
+  background-color: #194a99;
+  box-shadow: 0 8px 20px rgba(25, 74, 153, 0.9);
+}
+
+.audio-section {
+  margin: 20px auto;
+  text-align: center;
+}
+
+audio {
+  outline: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  width: 100%;
+  max-width: 500px;
+}
+  
 footer {
-    background: #333;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    left: 0;
+  text-align: center;
+  padding: 20px 0;
+  font-weight: 600;
+  color: #c9dbff;
+  background-color: #063970;
+  margin-top: auto;
 }
+
