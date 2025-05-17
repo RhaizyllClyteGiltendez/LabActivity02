@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HydroHaven | SignUp</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="brand">
+    <img src="logo.png" alt="HydroHaven logo" width="80" height="80">
+    <h1>HydroHaven <span class="tagline">Source of Purity</span></h1>
+  </header>
+
+  <main>
+    <h2>Be a Supporter! </h2>
+    <p class="value">Join our campaign for clean water &amp; safe sanitation access for every Filipino family.</p>
+
+    <form id="signupForm" novalidate>
+      <div class="field‑row">
+        <label>First name <span class="req">*</span>
+          <input type="text" id="fname" required>
+        </label>
+        <span class="err" id="err‑fname"></span>
+      </div>
+
+      <div class="field‑row">
+        <label>Last name <span class="req">*</span>
+          <input type="text" id="lname" required>
+        </label>
+        <span class="err" id="err‑lname"></span>
+      </div>
+
+      <div class="field‑row">
+        <label>Sex <span class="req">*</span></label>
+        <label><input type="radio" name="sex" value="Male" required> Male</label>
+        <label><input type="radio" name="sex" value="Female"> Female</label>
+        <label><input type="radio" name="sex" value="Prefer not to say"> Prefer not to say</label>
+        <span class="err" id="err‑sex"></span>
+      </div>
+
+      <div class="field‑row">
+        <label>Email <span class="req">*</span>
+          <input type="email" id="email" required>
+        </label>
+        <span class="err" id="err‑email"></span>
+      </div>
+
+      <div class="field‑row">
+        <label>Password <span class="req">*</span>
+          <input type="password" id="pwd" minlength="6" required>
+        </label>
+        <span class="err" id="err‑pwd"></span>
+      </div>
+
+      <div class="field‑row">
+        <label>Contact #
+          <input type="tel" id="contact" pattern="[0‑9]{11}">
+        </label>
+      </div>
+
+      <div class="field‑row textarea">
+        <label>Why do you want to support this campaign? <span class="req">*</span>
+          <textarea id="why" rows="4" required></textarea>
+        </label>
+        <span class="err" id="err‑why"></span>
+      </div>
+
+      <button type="submit" id="signupBtn">Join HydroHaven</button>
+    </form>
+  </main>
+
+  <footer>© 2025 HydroHaven</footer>
+</body>
+</html>
