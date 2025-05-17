@@ -1,111 +1,25 @@
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-    background: lightblue url("bg1.jpg") no-repeat fixed center;
-
-	<img id="home" src="watersplash.jpg" width="1" height="1">
-	<img id="next" src="watersplash.jpg" width="1" height="1">
+  background: lightblue url("bg1.jpg") no-repeat fixed center;
 }
 
+header .HydroHaven { font-size: 2.5em; margin-bottom: 10px; }
 
-header {
-    background: #0077b6;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-header .HydroHaven {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-}
-
-header nav {
-    margin: 10px 0;
-}
-
-header nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 1.1em;
-    transition: color 0.3s;
-}
-
-header nav a:hover {
-    color: #ffd700;
-}
-
-
-main {
-    padding: 40px 20px;
-    max-width: 800px;
-    margin: 20px auto;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transform: rotate(0.3deg);
-}
-
-main h2 {
-    color: #0077b6;
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-main p {
-    font-size: 1.2em;
-}
-
+#home, #next { display: none; }
 
 article {
-    padding: 20px;
-    max-width: 800px;
-    margin: 20px auto;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 800px;
+  margin: 20px auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
 }
-
-article section h1 {
-    font-size: 1.8em;
-    color: #0077b6;
-}
-
-article section p {
-    font-size: 1.2em;
-}
-
+article h1 { font-size: 1.8em; color: #0077b6; }
 
 iframe.video {
-    display: block;
-    margin: 20px auto;
-    border: none;
-    transition: transform 0.3s ease-in-out;
+  display: block;
+  margin: 20px auto;
+  border: none;
+  transition: transform .3s ease-in-out;
 }
-
-iframe.video:hover {
-    transform: scale(1.05);
-}
-
-
-footer {
-    background: #333;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-}
+iframe.video:hover { transform: scale(1.05); }
